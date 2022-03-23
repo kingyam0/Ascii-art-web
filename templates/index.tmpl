@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Asciiart-Web</title>
+    </head>
+<body>
+    <h1>Ascii Art Web</h1>
+    <br>
+    <br>
+    <h4> CHOOSE BANNER </h4>
+
+    <!-- We need a form -->
+    <!-- so the action is what needs to happen when the form is submitted -->
+
+    <!-- one of the reasons we use post - to hide from the url -->
+    <form action = "/ascii-art" method="post" > 
+
+        <!-- checked allows for a banner to be selected -->
+        <!-- checked isn't needed -->
+        <input type="radio" name="banner" value="standard" >
+        <label for = "standard"> Standard<label><br>
+        <input type="radio" name="banner" value="shadow">
+        <label for = "shadow"> Shadow<label><br>
+        <input type="radio" name="banner" value="thinkertoy">
+        <label for = "thinkertoy"> Thinkertoy<label><br>
+        <br> 
+
+        <textarea name="textinput" rows= "5" cols="25"></textarea>
+        <input type="submit" value="Submit">       
+
+    </form>
+    
+    <br>
+    <pre>{{.Datext}}</pre>
+
+</body>
+</html>
+ 
